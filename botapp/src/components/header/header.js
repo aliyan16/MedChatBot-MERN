@@ -11,7 +11,7 @@ export default function Header({user}) {
         <FaPersonBooth className="text-blue-600 text-3xl cursor-pointer" onClick={()=> navigate('/home')} />
       </div>
       <div className='flex space-x-12 text-2xl justify-between'>
-        <FaHome className="cursor-pointer" onClick={()=> navigate('/home')} />
+        <FaHome className="cursor-pointer" onClick={()=> navigate('/dashboard')} />
         <FaAddressCard className="cursor-pointer" onClick={()=> navigate('/reels')} />
         <FaClock className="cursor-pointer" onClick={()=> navigate('/friends')} />
 

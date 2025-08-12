@@ -1,14 +1,14 @@
 // Dashboard.jsx
 import React from 'react';
-import WelcomeBanner from './WelcomeBanner';
-import ProgressSummary from './ProgressSummary';
-import RecentSessions from './RecentSessions';
-import QuickAccess from './QuickAccess';
-import SessionStats from './SessionStats';
-import MoodTracking from './MoodTracking';
-import MoodTrends from './MoodTrends';
-import GoalsProgress from './GoalsProgress';
-import SpotlightInsights from './SpotlightInsights';
+import WelcomeBanner from '../components/dashboardComponents/welcome';
+import ProgressSummary from '../components/dashboardComponents/progress';
+import RecentSessions from '../components/dashboardComponents/recentSum';
+import QuickAccess from '../components/dashboardComponents/quickAccess';
+import SessionStats from '../components/dashboardComponents/sessionStat';
+import MoodTracking from '../components/dashboardComponents/moodtrack';
+import MoodTrends from '../components/dashboardComponents/moodtrend';
+import GoalsProgress from '../components/dashboardComponents/goalsProg';
+import SpotlightInsights from '../components/dashboardComponents/spotlight';
 
 const Dashboard = () => {
   return (
