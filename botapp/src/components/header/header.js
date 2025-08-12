@@ -6,7 +6,7 @@ import ProfileDropDown from './profileDropdown';
 export default function Header({user}) {
   const navigate=useNavigate()
   return (
-    <header className="flex items-center justify-between p-2 bg-black shadow-md sticky top-0 z-50">
+    <header className="flex items-center justify-between p-2 bg-black shadow-md sticky top-0 z-50 text-white" >
       <div className="flex items-center space-x-2">
         <FaPersonBooth className="text-blue-600 text-3xl cursor-pointer" onClick={()=> navigate('/home')} />
       </div>

@@ -11,7 +11,6 @@ import {
   FaChevronUp
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import './leftbar.css'
 
 function LeftSideBar({ user }) {
   const navigate = useNavigate();
@@ -65,7 +64,7 @@ function LeftSideBar({ user }) {
         {menuItems.map((item) => (
           <div key={item.name}>
             <div 
-              className="flex items-center justify-between cursor-pointer p-3 rounded hover:bg-gray-700 transition"
+              className="flex items-center justify-between cursor-pointer p-3 rounded hover:bg-gray-700 transition-all duration-200 ease-in-out"
               onClick={() => item.subItems ? toggleDropdown(item.name) : navigate(item.path)}
             >
               <div className="flex items-center space-x-3">
@@ -83,7 +82,7 @@ function LeftSideBar({ user }) {
                 {item.subItems.map((subItem) => (
                   <div
                     key={subItem.name}
-                    className="flex items-center space-x-3 cursor-pointer p-2 pl-4 rounded hover:bg-gray-700 transition"
+                    className="flex items-center space-x-3 cursor-pointer p-2 pl-4 rounded hover:bg-gray-700 transition-all duration-200 ease-in-out"
                     onClick={() => navigate(subItem.path)}
                   >
                     {subItem.icon}

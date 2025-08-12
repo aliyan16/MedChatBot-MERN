@@ -5,7 +5,6 @@ import WelcomeStep from '../components/welcomestep';
 import HomeStep from '../components/homestep';
 import ProcessStep from '../components/processStep';
 import CompleteStep from '../components/completeStep';
-import './onboarding.css';
 
 const Onboarding = () => {
   const [step, setStep] = useState(1);
@@ -39,20 +38,13 @@ const Onboarding = () => {
   };
 
   return (
-    <div className="app-container">
-      <header className="app-header">
-        <h1>MindFlow AI</h1>
-      </header>
-      
+    <div className="min-h-screen bg-black text-white flex flex-col max-w-4xl mx-auto pb-28">
       <ProgressBar currentStep={step} totalSteps={4} />
       
-      <div className="step-container">
+      <div className="flex-1 flex flex-col justify-center">
         {renderStep()}
       </div>
       
-      <footer className="app-footer">
-        <p>© 2024 MindFlow AI. All rights reserved | Advanced CSI Training Assistant</p>
-      </footer>
     </div>
   );
 };
