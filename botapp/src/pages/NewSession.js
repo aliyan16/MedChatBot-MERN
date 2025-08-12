@@ -5,7 +5,7 @@ import ChatContainer from '../components/sessionPageComponents/chatContainer';
 
 const TherapySession = () => {
   return (
-    <div className="flex-1 p-6 bg-black">
+    <div className="flex-1 p-6 bg-black h-full">
       {/* Breadcrumb */}
       <div className="mb-6">
         <div className="flex items-center text-sm text-gray-400">
