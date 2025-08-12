@@ -1,0 +1,33 @@
+/* CompleteStep.css */
+.complete-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.complete-card {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.complete-card h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.complete-card p {
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.checkmark {
+  font-size: 60px;
+  color: #2ecc71;
+  margin: 20px 0;
+}
