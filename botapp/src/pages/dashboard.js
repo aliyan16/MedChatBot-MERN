@@ -12,7 +12,7 @@ import SpotlightInsights from '../components/dashboardComponents/spotlight';
 
 const Dashboard = () => {
   return (
-    <div className="p-5 max-w-7xl mx-auto">
+    <div className=" p-5 max-w-7xl mx-auto">
       <WelcomeBanner />
       <ProgressSummary improvement={25} strongestImpact="Mindfulness exercises on Tuesday" />
       

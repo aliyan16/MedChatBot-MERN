@@ -8,7 +8,7 @@ export default function Header({user}) {
   return (
     <header className="flex items-center justify-between p-2 bg-black shadow-md sticky top-0 z-50 text-white" >
       <div className="flex items-center space-x-2">
-        <FaPersonBooth className="text-blue-600 text-3xl cursor-pointer" onClick={()=> navigate('/home')} />
+        <FaPersonBooth className="text-blue-600 text-3xl cursor-pointer" onClick={()=> navigate('/')} />
       </div>
       <div className='flex space-x-12 text-2xl justify-between'>
         <FaHome className="cursor-pointer" onClick={()=> navigate('/dashboard')} />
