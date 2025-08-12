@@ -1,13 +1,13 @@
-// App.js
+// Onboarding.js
 import React, { useState } from 'react';
-import ProgressBar from './ProgressBar';
-import WelcomeStep from './WelcomeStep';
-import HomeStep from './HomeStep';
-import ProcessStep from './ProcessStep';
-import CompleteStep from './CompleteStep';
-import './App.css';
+import ProgressBar from '../components/progressbar';
+import WelcomeStep from '../components/welcomestep';
+import HomeStep from '../components/homestep';
+import ProcessStep from '../components/processStep';
+import CompleteStep from '../components/completeStep';
+import './onboarding.css';
 
-const App = () => {
+const Onboarding = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     name: '',
@@ -57,4 +57,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Onboarding;
