@@ -4,6 +4,7 @@ import Header from "../components/header/header";
 import LeftSideBar from "../components/sidebar/leftsideBar";
 import Footer from "../components/footer/footer";
 import Dashboard from "../pages/dashboard";
+import TherapySession from "../pages/NewSession";
 
 function PageRouting() {
   return (
@@ -16,6 +17,7 @@ function PageRouting() {
             <Routes>
               <Route path="/" element={<Onboarding />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/sessions/new" element={<TherapySession />} />
             </Routes>
           </div>
         </div>
