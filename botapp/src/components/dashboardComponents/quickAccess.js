@@ -7,11 +7,11 @@ const QuickAccess = () => {
   ];
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-sm">
-      <h3 className="text-lg font-semibold text-gray-800 mb-3">Quick Access</h3>
+    <div className="bg-black border p-4 rounded-lg shadow-sm">
+      <h3 className="text-lg font-semibold text-white mb-3">Quick Access</h3>
       <ul className="space-y-2 mb-3">
         {links.map((link, index) => (
-          <li key={index} className="text-gray-700 hover:text-blue-500 cursor-pointer">
+          <li key={index} className="text-white hover:text-blue-500 cursor-pointer">
             {link}
           </li>
         ))}

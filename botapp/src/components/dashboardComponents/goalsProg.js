@@ -6,14 +6,14 @@ const GoalsProgress = () => {
   ];
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-sm">
-      <h3 className="text-lg font-semibold text-gray-800 mb-3">Goals Progress</h3>
+    <div className="bg-black border p-4 rounded-lg shadow-sm">
+      <h3 className="text-lg font-semibold text-white mb-3">Goals Progress</h3>
       <div className="space-y-3">
         {goals.map((goal, index) => (
           <div key={index} className="flex justify-between items-center">
-            <span className="text-gray-700">{goal.name}</span>
+            <span className="text-white">{goal.name}</span>
             {goal.completed !== null && (
-              <span className="text-gray-800 font-medium">
+              <span className="text-white font-medium">
                 {goal.completed}/{goal.total}
               </span>
             )}
